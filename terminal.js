@@ -124,6 +124,9 @@ My long term vision is to be at the forefront and at the crossroads of innovatio
 
 My learning experiences have been a testament to my patience, independent thinking, and the drive to take an idea and make it work.
 
+<span class="out-cyan">Family Contribution:</span>
+I actively use my IT knowledge to support my family—whether it's setting up networks to help them access their folders faster, reviving old laptops to extend their lifespan, or troubleshooting technical issues. For me, technology is a tool to help others.
+
 <span class="out-cyan">University Contribution:</span>
 I come to AUBH with more than academic preparation—I come with curiosity, a history of self-directed learning, and a motivation to do more than the minimum. I want to be challenged, work collaboratively, and elevate the community around me.
 `
