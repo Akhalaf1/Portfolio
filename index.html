@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdulla Khalaf | Portfolio</title>
+  <meta name="description" content="Portfolio of Abdulla Khalaf — Computer Science student, self-taught technologist, and aspiring systems architect from Bahrain." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Fira+Code:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Boot Screen -->
+  <div id="boot-screen">
+    <div id="boot-content">
+      <pre id="ascii-art"></pre>
+      <div id="boot-log"></div>
+      <div id="boot-bar-wrap">
+        <div id="boot-bar"></div>
+        <span id="boot-pct">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Terminal -->
+  <div id="terminal-wrapper" class="hidden">
+    <!-- Scanline overlay -->
+    <div class="scanlines"></div>
+
+    <!-- Header Bar -->
+    <div id="term-header">
+      <div class="win-btns">
+        <span class="btn-close"></span>
+        <span class="btn-min"></span>
+        <span class="btn-max"></span>
+      </div>
+      <span id="term-title">abdulla@portfolio:~</span>
+      <div class="header-right">
+        <span id="clock"></span>
+      </div>
+    </div>
+
+    <!-- Layout -->
+    <div id="layout">
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-section">
+          <p class="sidebar-label">// QUICK COMMANDS</p>
+          <ul id="cmd-list">
+            <li><button class="cmd-btn" data-cmd="whoami">whoami</button></li>
+            <li><button class="cmd-btn" data-cmd="cat about.txt">cat about.txt</button></li>
+            <li><button class="cmd-btn" data-cmd="cat journey.log">cat journey.log</button></li>
+            <li><button class="cmd-btn" data-cmd="ls projects/">ls projects/</button></li>
+            <li><button class="cmd-btn" data-cmd="ls skills/">ls skills/</button></li>
+            <li><button class="cmd-btn" data-cmd="cat interests.json">cat interests.json</button></li>
+            <li><button class="cmd-btn" data-cmd="cat goals.txt">cat goals.txt</button></li>
+            <li><button class="cmd-btn" data-cmd="cat achievements.txt">cat achievements.txt</button></li>
+            <li><button class="cmd-btn" data-cmd="cat contributions.txt">cat contributions.txt</button></li>
+            <li><button class="cmd-btn" data-cmd="cat scholarship.txt">cat scholarship.txt</button></li>
+            <li><button class="cmd-btn" data-cmd="cat contact.md">cat contact.md</button></li>
+            <li><button class="cmd-btn" data-cmd="clear">clear</button></li>
+          </ul>
+        </div>
+        <div class="sidebar-section" id="sys-stats">
+          <p class="sidebar-label">// SYSTEM STATUS</p>
+          <div class="stat-row"><span class="stat-key">STATUS</span><span class="stat-val blink-green">● ONLINE</span></div>
+          <div class="stat-row"><span class="stat-key">MAJOR</span><span class="stat-val">CS @ AUBH</span></div>
+          <div class="stat-row"><span class="stat-key">LOCATION</span><span class="stat-val">Bahrain</span></div>
+          <div class="stat-row"><span class="stat-key">MOOD</span><span class="stat-val">Curious</span></div>
+        </div>
+      </aside>
+
+      <!-- Terminal Body -->
+      <main id="terminal-body">
+        <div id="output"></div>
+        <div id="input-line">
+          <span class="prompt">abdulla@portfolio:~$&nbsp;</span>
+          <input id="cmd-input" type="text" autocomplete="off" autocorrect="off" spellcheck="false" autofocus aria-label="Terminal input" />
+          <span class="cursor-block"></span>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="terminal.js"></script>
+</body>
+</html>
